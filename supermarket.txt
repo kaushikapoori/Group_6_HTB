@@ -1,0 +1,42 @@
+
+ Step 1: Understanding the Challenge
+- Read the challenge's description carefully to understand what is expected of you. 
+
+Step 2: Downloading the APK
+- Download the APK from the hackthebox platform. Ensure that I have the right permissions.
+
+Step 3: Decompiling the APK
+- Used tools like APKTool (https://ibotpeaches.github.io/Apktool/), jadx to decompile the APK.
+- steps to decompile with APKTool:
+  1. Install APKTool.
+  2. Open a command line and run `apktool d filename.apk -o output_dir`.
+  3. Navigate to `output_dir` to view the decompiled contents.
+
+Step 4: Inspecting Decompiled Code
+- Explore the decompiled code:
+  - AndroidManifest.xml: This file contains information about the app's structure, permissions, and activities.
+  - Res directory: Contains resources like images, layouts, and XML files.
+  - smali code: Represents the Android bytecode, which you can analyze to understand the app's behavior.
+
+
+Step 5: Identifying Interesting Components
+- Looked for suspicious activity, such as:
+  - Custom permissions or permissions that don't seem necessary for the app's function.
+  - Code snippets referencing sensitive actions, like accessing system files or network connections.
+  - Hidden activities or components not mentioned in the manifest.
+  
+Step 6: Using an Android Emulator
+- Load the APK into an Android emulator, such as Genymotion(https://www.genymotion.com/) / Android Studio's (https://developer.android.com/studio/run/emulator).
+  1. Install the APK onto the emulator.
+  2. Use the app to interact with its features.
+  3. Observe the app's behavior, logging, and responses to different inputs.
+
+Step 7: Debugging with a Dynamic Analysis Tool
+- Use tools like Xposed Framework (https://repo.xposed.info/) to dynamically analyze the app at runtime.
+- With Xposed, you can hook into app functions to observe or manipulate them.
+
+Step 8: Document Your Findings
+- Kept track of interesting points, code snippets, or vulnerabilities found during the analysis.
+Step 9: Exploring Further
+  - Tried to review online resources, including forums, blogs, or videos, for insights on similar challenges.
+  - Experiment with different tools or techniques, like static or dynamic analysis.
