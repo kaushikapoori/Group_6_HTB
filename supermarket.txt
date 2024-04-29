@@ -1,9 +1,9 @@
 
  Step 1: Understanding the Challenge
-- Read the challenge's description carefully to understand what is expected of you. 
+- Read the challenge's description carefully to understand what is expected to do. 
 
 Step 2: Downloading the APK
-- Download the APK from the hackthebox platform. Ensure that I have the right permissions.
+- Download the APK from the hackthebox platform. Ensure that we have the right permissions.
 
 Step 3: Decompiling the APK
 - Used tools like APKTool (https://ibotpeaches.github.io/Apktool/), jadx to decompile the APK.
@@ -17,7 +17,6 @@ Step 4: Inspecting Decompiled Code
   - AndroidManifest.xml: This file contains information about the app's structure, permissions, and activities.
   - Res directory: Contains resources like images, layouts, and XML files.
   - smali code: Represents the Android bytecode, which you can analyze to understand the app's behavior.
-
 
 Step 5: Identifying Interesting Components
 - Looked for suspicious activity, such as:
@@ -37,6 +36,7 @@ Step 7: Debugging with a Dynamic Analysis Tool
 
 Step 8: Document Your Findings
 - Kept track of interesting points, code snippets, or vulnerabilities found during the analysis.
+
 Step 9: Exploring Further
   - Tried to review online resources, including forums, blogs, or videos, for insights on similar challenges.
   - Experiment with different tools or techniques, like static or dynamic analysis.
